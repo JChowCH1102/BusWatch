@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		209A675AC0E4AEA97121E06E /* Pods_BusWatch_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37007F57A222AD9D7452DCD2 /* Pods_BusWatch_WatchKit_App.framework */; };
+		46B87612C11E9E3A42DFF733 /* Pods_BusWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06980C29B4B15E51F5C59B3E /* Pods_BusWatch.framework */; };
+		F6D3BE0B27048B0900D6848D /* BusWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F6D3BE0A27048B0900D6848D /* BusWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F6D3BE1027048B0D00D6848D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D3BE0F27048B0D00D6848D /* Assets.xcassets */; };
+		F6D3BE1627048B0D00D6848D /* BusWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F6D3BE1527048B0D00D6848D /* BusWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F6D3BE1B27048B0D00D6848D /* BusWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D3BE1A27048B0D00D6848D /* BusWatchApp.swift */; };
+		F6D3BE1D27048B0D00D6848D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D3BE1C27048B0D00D6848D /* ContentView.swift */; };
+		F6D3BE1F27048B0D00D6848D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D3BE1E27048B0D00D6848D /* NotificationController.swift */; };
+		F6D3BE2127048B0D00D6848D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D3BE2027048B0D00D6848D /* NotificationView.swift */; };
+		F6D3BE2327048B0D00D6848D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D3BE2227048B0D00D6848D /* ComplicationController.swift */; };
+		F6D3BE2527048B1100D6848D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D3BE2427048B1100D6848D /* Assets.xcassets */; };
+		F6D3BE2827048B1100D6848D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6D3BE2727048B1100D6848D /* Preview Assets.xcassets */; };
+		F6D3BE3927048BC300D6848D /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D3BE3827048BC300D6848D /* ContentViewController.swift */; };
+		F6D3BE3B27048F3C00D6848D /* BusETA.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D3BE3A27048F3C00D6848D /* BusETA.swift */; };
+		F6ED62A12704A71E00482EC2 /* DisplayBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ED62A02704A71E00482EC2 /* DisplayBus.swift */; };
+		FE98D9CDE518F075BD0BE340 /* Pods_BusWatch_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D354F52459689C683DB92F8 /* Pods_BusWatch_WatchKit_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6D3BE0C27048B0900D6848D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6D3BE0027048B0800D6848D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6D3BE0927048B0900D6848D;
+			remoteInfo = "BusWatch WatchKit App";
+		};
+		F6D3BE1727048B0D00D6848D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6D3BE0027048B0800D6848D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6D3BE1427048B0D00D6848D;
+			remoteInfo = "BusWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6D3BE3027048B1100D6848D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F6D3BE1627048B0D00D6848D /* BusWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D3BE3427048B1100D6848D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F6D3BE0B27048B0900D6848D /* BusWatch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		043613AC172B0CF2F1E74388 /* Pods-BusWatch WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusWatch WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-BusWatch WatchKit App/Pods-BusWatch WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		06980C29B4B15E51F5C59B3E /* Pods_BusWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9319855C8A544EE3EDA0CF /* Pods-BusWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusWatch.release.xcconfig"; path = "Target Support Files/Pods-BusWatch/Pods-BusWatch.release.xcconfig"; sourceTree = "<group>"; };
+		37007F57A222AD9D7452DCD2 /* Pods_BusWatch_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusWatch_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		597D81D0DDCE00934C227675 /* Pods-BusWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusWatch.debug.xcconfig"; path = "Target Support Files/Pods-BusWatch/Pods-BusWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		7359539F427DCBF5899BB8D5 /* Pods-BusWatch WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusWatch WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-BusWatch WatchKit Extension/Pods-BusWatch WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		7D354F52459689C683DB92F8 /* Pods_BusWatch_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusWatch_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2EF360057F86AF280080A3B /* Pods-BusWatch WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusWatch WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-BusWatch WatchKit Extension/Pods-BusWatch WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		F6D3BE0627048B0800D6848D /* BusWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D3BE0A27048B0900D6848D /* BusWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BusWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D3BE0F27048B0D00D6848D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6D3BE1527048B0D00D6848D /* BusWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BusWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D3BE1A27048B0D00D6848D /* BusWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusWatchApp.swift; sourceTree = "<group>"; };
+		F6D3BE1C27048B0D00D6848D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F6D3BE1E27048B0D00D6848D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F6D3BE2027048B0D00D6848D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		F6D3BE2227048B0D00D6848D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F6D3BE2427048B1100D6848D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6D3BE2727048B1100D6848D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6D3BE2927048B1100D6848D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6D3BE2A27048B1100D6848D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F6D3BE3827048BC300D6848D /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		F6D3BE3A27048F3C00D6848D /* BusETA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusETA.swift; sourceTree = "<group>"; };
+		F6ED62A02704A71E00482EC2 /* DisplayBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBus.swift; sourceTree = "<group>"; };
+		F7DE62223AC379D84073C966 /* Pods-BusWatch WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusWatch WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-BusWatch WatchKit App/Pods-BusWatch WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB147B7BE84D4A8D508B6DF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209A675AC0E4AEA97121E06E /* Pods_BusWatch_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F617D260BCB95FA0E0F0C1D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B87612C11E9E3A42DFF733 /* Pods_BusWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D3BE1227048B0D00D6848D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE98D9CDE518F075BD0BE340 /* Pods_BusWatch_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B2D765E15C18634538AC855 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06980C29B4B15E51F5C59B3E /* Pods_BusWatch.framework */,
+				37007F57A222AD9D7452DCD2 /* Pods_BusWatch_WatchKit_App.framework */,
+				7D354F52459689C683DB92F8 /* Pods_BusWatch_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83074C5E1D681294B3A45D4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				597D81D0DDCE00934C227675 /* Pods-BusWatch.debug.xcconfig */,
+				2F9319855C8A544EE3EDA0CF /* Pods-BusWatch.release.xcconfig */,
+				043613AC172B0CF2F1E74388 /* Pods-BusWatch WatchKit App.debug.xcconfig */,
+				F7DE62223AC379D84073C966 /* Pods-BusWatch WatchKit App.release.xcconfig */,
+				F2EF360057F86AF280080A3B /* Pods-BusWatch WatchKit Extension.debug.xcconfig */,
+				7359539F427DCBF5899BB8D5 /* Pods-BusWatch WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F6D3BDFF27048B0800D6848D = {
+			isa = PBXGroup;
+			children = (
+				F6D3BE0E27048B0900D6848D /* BusWatch WatchKit App */,
+				F6D3BE1927048B0D00D6848D /* BusWatch WatchKit Extension */,
+				F6D3BE0727048B0800D6848D /* Products */,
+				83074C5E1D681294B3A45D4F /* Pods */,
+				2B2D765E15C18634538AC855 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F6D3BE0727048B0800D6848D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6D3BE0627048B0800D6848D /* BusWatch.app */,
+				F6D3BE0A27048B0900D6848D /* BusWatch WatchKit App.app */,
+				F6D3BE1527048B0D00D6848D /* BusWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6D3BE0E27048B0900D6848D /* BusWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F6D3BE0F27048B0D00D6848D /* Assets.xcassets */,
+			);
+			path = "BusWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		F6D3BE1927048B0D00D6848D /* BusWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F6D3BE1A27048B0D00D6848D /* BusWatchApp.swift */,
+				F6D3BE1C27048B0D00D6848D /* ContentView.swift */,
+				F6D3BE3827048BC300D6848D /* ContentViewController.swift */,
+				F6D3BE1E27048B0D00D6848D /* NotificationController.swift */,
+				F6D3BE2027048B0D00D6848D /* NotificationView.swift */,
+				F6D3BE2227048B0D00D6848D /* ComplicationController.swift */,
+				F6D3BE2427048B1100D6848D /* Assets.xcassets */,
+				F6D3BE2927048B1100D6848D /* Info.plist */,
+				F6D3BE2A27048B1100D6848D /* PushNotificationPayload.apns */,
+				F6D3BE2627048B1100D6848D /* Preview Content */,
+				F6D3BE3A27048F3C00D6848D /* BusETA.swift */,
+				F6ED62A02704A71E00482EC2 /* DisplayBus.swift */,
+			);
+			path = "BusWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F6D3BE2627048B1100D6848D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F6D3BE2727048B1100D6848D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6D3BE0527048B0800D6848D /* BusWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6D3BE3527048B1100D6848D /* Build configuration list for PBXNativeTarget "BusWatch" */;
+			buildPhases = (
+				F724E61B8A9A4DBBB928D426 /* [CP] Check Pods Manifest.lock */,
+				F6D3BE0427048B0800D6848D /* Resources */,
+				F6D3BE3427048B1100D6848D /* Embed Watch Content */,
+				F617D260BCB95FA0E0F0C1D6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6D3BE0D27048B0900D6848D /* PBXTargetDependency */,
+			);
+			name = BusWatch;
+			productName = BusWatch;
+			productReference = F6D3BE0627048B0800D6848D /* BusWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		F6D3BE0927048B0900D6848D /* BusWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6D3BE3127048B1100D6848D /* Build configuration list for PBXNativeTarget "BusWatch WatchKit App" */;
+			buildPhases = (
+				5E1F3CF638B37467E153923C /* [CP] Check Pods Manifest.lock */,
+				F6D3BE0827048B0900D6848D /* Resources */,
+				F6D3BE3027048B1100D6848D /* Embed App Extensions */,
+				DB147B7BE84D4A8D508B6DF0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6D3BE1827048B0D00D6848D /* PBXTargetDependency */,
+			);
+			name = "BusWatch WatchKit App";
+			productName = "BusWatch WatchKit App";
+			productReference = F6D3BE0A27048B0900D6848D /* BusWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F6D3BE1427048B0D00D6848D /* BusWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6D3BE2D27048B1100D6848D /* Build configuration list for PBXNativeTarget "BusWatch WatchKit Extension" */;
+			buildPhases = (
+				BB8EED4442EDCFAB1BE7302A /* [CP] Check Pods Manifest.lock */,
+				F6D3BE1127048B0D00D6848D /* Sources */,
+				F6D3BE1227048B0D00D6848D /* Frameworks */,
+				F6D3BE1327048B0D00D6848D /* Resources */,
+				48808C1D384694C1B8CABD5C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BusWatch WatchKit Extension";
+			productName = "BusWatch WatchKit Extension";
+			productReference = F6D3BE1527048B0D00D6848D /* BusWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6D3BE0027048B0800D6848D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					F6D3BE0527048B0800D6848D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					F6D3BE0927048B0900D6848D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					F6D3BE1427048B0D00D6848D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = F6D3BE0327048B0800D6848D /* Build configuration list for PBXProject "BusWatch" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6D3BDFF27048B0800D6848D;
+			productRefGroup = F6D3BE0727048B0800D6848D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6D3BE0527048B0800D6848D /* BusWatch */,
+				F6D3BE0927048B0900D6848D /* BusWatch WatchKit App */,
+				F6D3BE1427048B0D00D6848D /* BusWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6D3BE0427048B0800D6848D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D3BE0827048B0900D6848D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D3BE1027048B0D00D6848D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D3BE1327048B0D00D6848D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D3BE2827048B1100D6848D /* Preview Assets.xcassets in Resources */,
+				F6D3BE2527048B1100D6848D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48808C1D384694C1B8CABD5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BusWatch WatchKit Extension/Pods-BusWatch WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BusWatch WatchKit Extension/Pods-BusWatch WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BusWatch WatchKit Extension/Pods-BusWatch WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E1F3CF638B37467E153923C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BusWatch WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB8EED4442EDCFAB1BE7302A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BusWatch WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F724E61B8A9A4DBBB928D426 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BusWatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6D3BE1127048B0D00D6848D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D3BE3B27048F3C00D6848D /* BusETA.swift in Sources */,
+				F6D3BE1F27048B0D00D6848D /* NotificationController.swift in Sources */,
+				F6D3BE3927048BC300D6848D /* ContentViewController.swift in Sources */,
+				F6ED62A12704A71E00482EC2 /* DisplayBus.swift in Sources */,
+				F6D3BE1D27048B0D00D6848D /* ContentView.swift in Sources */,
+				F6D3BE2327048B0D00D6848D /* ComplicationController.swift in Sources */,
+				F6D3BE1B27048B0D00D6848D /* BusWatchApp.swift in Sources */,
+				F6D3BE2127048B0D00D6848D /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6D3BE0D27048B0900D6848D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6D3BE0927048B0900D6848D /* BusWatch WatchKit App */;
+			targetProxy = F6D3BE0C27048B0900D6848D /* PBXContainerItemProxy */;
+		};
+		F6D3BE1827048B0D00D6848D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6D3BE1427048B0D00D6848D /* BusWatch WatchKit Extension */;
+			targetProxy = F6D3BE1727048B0D00D6848D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F6D3BE2B27048B1100D6848D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6D3BE2C27048B1100D6848D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6D3BE2E27048B1100D6848D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2EF360057F86AF280080A3B /* Pods-BusWatch WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BusWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = B68X3NBKC6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BusWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BusWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JChowCH.BusWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		F6D3BE2F27048B1100D6848D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7359539F427DCBF5899BB8D5 /* Pods-BusWatch WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BusWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = B68X3NBKC6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BusWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BusWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JChowCH.BusWatch.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		F6D3BE3227048B1100D6848D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 043613AC172B0CF2F1E74388 /* Pods-BusWatch WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B68X3NBKC6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = BusWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "BusWatch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JChowCH.BusWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		F6D3BE3327048B1100D6848D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7DE62223AC379D84073C966 /* Pods-BusWatch WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B68X3NBKC6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = BusWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "BusWatch WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JChowCH.BusWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		F6D3BE3627048B1100D6848D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 597D81D0DDCE00934C227675 /* Pods-BusWatch.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B68X3NBKC6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JChowCH.BusWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F6D3BE3727048B1100D6848D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F9319855C8A544EE3EDA0CF /* Pods-BusWatch.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B68X3NBKC6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JChowCH.BusWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6D3BE0327048B0800D6848D /* Build configuration list for PBXProject "BusWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D3BE2B27048B1100D6848D /* Debug */,
+				F6D3BE2C27048B1100D6848D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6D3BE2D27048B1100D6848D /* Build configuration list for PBXNativeTarget "BusWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D3BE2E27048B1100D6848D /* Debug */,
+				F6D3BE2F27048B1100D6848D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6D3BE3127048B1100D6848D /* Build configuration list for PBXNativeTarget "BusWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D3BE3227048B1100D6848D /* Debug */,
+				F6D3BE3327048B1100D6848D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6D3BE3527048B1100D6848D /* Build configuration list for PBXNativeTarget "BusWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D3BE3627048B1100D6848D /* Debug */,
+				F6D3BE3727048B1100D6848D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6D3BE0027048B0800D6848D /* Project object */;
+}
