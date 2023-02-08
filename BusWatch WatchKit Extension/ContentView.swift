@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            HStack {
+            HStack(alignment: .center) {
                 Text(controller.bus.route)
                     .font(.title)
                     .foregroundColor(Color.init(red: 1.0, green: 0.4, blue: 0.4))
@@ -68,6 +68,11 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().previewDevice(PreviewDevice(rawValue: "Apple Watch Series 7 - 41mm"))
+            .previewDisplayName("S7 - 41mm")
+        ContentView().previewDevice(PreviewDevice(rawValue: "Apple Watch Series 6 - 40mm"))
+            .previewDisplayName("S6 - 40mm")
+        ContentView().previewDevice(PreviewDevice(rawValue: "Apple Watch Series 3 - 38mm"))
+            .previewDisplayName("S3 - 38mm")
     }
 }

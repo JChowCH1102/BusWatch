@@ -61,10 +61,10 @@ class ContentViewController: ObservableObject {
                 if let data = response.data {
                     let decodedData = try JSONDecoder().decode(BusETA.self, from: data)
                     if decodedData.data.count > 0, let generatedTime = decodedData.generated_timestamp {
-                        route = decodedData.data[0].route ?? "--"
-                        dest = decodedData.data[0].dest_tc ?? "--"
                         for eta in decodedData.data {
-                            if eta.seq == 4 {
+                            if eta.seq == 4 && eta.dir == "I" {
+                                route = eta.route ?? "--"
+                                dest = eta.dest_tc ?? "--"
                                 busTime.append(iSO8601ToMin(eta.eta, generatedTime))
                                 
                             }
